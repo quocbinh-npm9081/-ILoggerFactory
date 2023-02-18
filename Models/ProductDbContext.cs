@@ -1,8 +1,11 @@
-using Microsoft.EntityFrameworkCore;
 
-namespace EnityFramework
+using Microsoft.EntityFrameworkCore;
+#nullable disable
+
+namespace enityframework.Models
 {
     public class ProdcutDbContext : DbContext{
+        public DbSet<Product> products {set; get;}
         private const string connectionString = @"
             Data Source=localhost,1433;
             Initial Catalog=data01;
