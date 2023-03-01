@@ -21,6 +21,6 @@ namespace enityframework.Models
         public string ProductName {set; get;}
         [StringLength(50)]
         public string Provider {set; get;}
-
+        public void PrintInfo() => Console.WriteLine($"{ProductID} - {ProductName} -{Provider}");
     }
 }
